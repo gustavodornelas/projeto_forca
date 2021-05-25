@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /*
-Alunos: Ana LuÌsa Sousa Guimar„es
-        Daniel Gomes Janu·rio J˙nior
+Alunos: Ana Lu√≠sa Sousa Guimar√£es
+        Daniel Gomes Janu√°rio J√∫nior
         Everton Alves da Silva
         Gustavo Mateus Machado Dornelas (lider)
-        Õtalo Junior Rodrigues Trindade
+        √çtalo Junior Rodrigues Trindade
         Victor Gabriel Santos de Oliveira
 
 */
@@ -19,7 +19,7 @@ int main (){
 
 
     do{
-        for (i=0; i<15; i++){ //zera o contador verifica toda vez que entra no menu
+        for (i=0; i<16; i++){ //zera o contador verifica toda vez que entra no menu
         verifica[i]=1; //verifica e um vetor do tipo logico onde 1 e falso e 0 e verdadeiro
         }
 
@@ -51,7 +51,7 @@ int main (){
                 system ("cls");
                 continue;
             }
-            //continuar opÁ„o 2
+            //continuar op√ß√£o 2
 
             //zerar contadores
             chutes_errados=0;
@@ -156,7 +156,7 @@ int main (){
                 printf ("\n\nDigite uma Letra: ");
                 scanf ("%c", &chute); //recebe a letra chutada pelo usuario
                 fflush (stdin);
-                chute=toupper(chute); //strtpr n„o funcionou ent„o usamos o toupper para deixar a letra em maiuscula
+                chute=toupper(chute); //strtpr n√£o funcionou ent√£o usamos o toupper para deixar a letra em maiuscula
 
                 for (i=0;i<letras;i++){ //percorre o vetor da palavra cadastrada
 
@@ -166,14 +166,14 @@ int main (){
                             chutes_certos++;
                         }
                     }
-                    if(chute!=palavra[i]){ //armazena +1 sempre que uma posiÁ„o do vetor ta errada.
+                    if(chute!=palavra[i]){ //armazena +1 sempre que uma posi√ß√£o do vetor ta errada.
                         erros++;
                     }
                 }
 
-                if (erros==letras){ //so vai retornar erro caso todas as posiÁıes do vetor forem erradas.
+                if (erros==letras){ //so vai retornar erro caso todas as posi√ß√µes do vetor forem erradas.
                     chutes_errados++;
-                    letras_chutes[chutes_errados]=chute; //armazena a letra errada digitada num vetor com posiÁ„o igual ao numero do erro
+                    letras_chutes[chutes_errados]=chute; //armazena a letra errada digitada num vetor com posi√ß√£o igual ao numero do erro
                 }
 
             }while(chutes_errados<6 && chutes_certos<letras); //repete ate o usuario errar 6 vezes ou acertar a palavra
